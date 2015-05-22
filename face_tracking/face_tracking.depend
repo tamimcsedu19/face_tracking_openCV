@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1432305714 source:/home/tamim/hd_project/face_tracking/main.cpp
+	<iostream>
+	<bits/stdc++.h>
+	"serial_send.h"
+
+1432305798 /home/tamim/hd_project/face_tracking/serial_send.h
+	<string>
+
