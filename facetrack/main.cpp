@@ -24,7 +24,7 @@ int main(int argc, const char** argv)
 
     CascadeClassifier face_cascade,face_cascade_alt;
     face_cascade.load("haarcascade_frontalface_default.xml");
-    face_cascade_alt.load("haarcascade_frontalface_alt.xml");
+    face_cascade_alt.load("haarcascade_profileface.xml");
 
     //setup video capture device and link it to the first capture device
     VideoCapture captureDevice;
