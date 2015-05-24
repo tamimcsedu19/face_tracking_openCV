@@ -7,7 +7,7 @@ int servoID=-1;
 String inString="";
 void setup() 
 { 
-  servoUpDown.attach(2);  
+  servoUpDown.attach(4);  
   servoLeftRight.attach(3);
   servoUpDown.write(90);  
   servoLeftRight.write(90);
@@ -52,14 +52,14 @@ void loop(){
   
   if(servoID == upDownServoID)
   {
-    Serial.println("Writing to updown servo");
-    servoUpDown.write(angle);  //Set the tilt servo position to the value of the second command byte received on the serial port
+        Serial.println("Writing to updown servo");
+        servoUpDown.write(angle);  //Set the tilt servo position to the value of the second command byte received on the serial port
   }
   else if(servoID == leftRightServoID)
   { 
     Serial.println("Writing to leftright servo: ");
 	Serial.println(angle);
-    servoLeftRight.write(angle);   //Set the pan servo position to the value of the second command byte received from the serial port.
+        servoLeftRight.write(angle);   //Set the pan servo position to the value of the second command byte received from the serial port.
   }
   servoID = -1;
   //If the character is not the pan or tilt servo ID, it is ignored.

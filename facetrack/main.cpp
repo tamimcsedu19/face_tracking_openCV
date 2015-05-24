@@ -14,7 +14,7 @@ int midFrameHeight,midFrameWidth;
 void adjustCamera(int midx,int midy);
 
 int midScreenWindow = 10;
-int stepsize = 1;
+int stepsize = 3;
 
 int leftRightServo = 1;
 

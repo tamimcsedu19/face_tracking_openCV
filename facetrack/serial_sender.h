@@ -13,7 +13,7 @@ class serial_sender
         void send(int servoID,int angle)
         {
             if(file == NULL)
-                return;
+               exit(0);
             fprintf(file, "%d%d\n",servoID,angle);
 
         }
